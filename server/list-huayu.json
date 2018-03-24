@@ -1,0 +1,8 @@
+{
+    'index': 'list-hanguo',
+    'info': [
+        { 'name': '李健 - 向往', 'url': "../server/media/李健 - 向往.mp3", 'img_url': '../common/img/2.jpg' },
+        { 'name': '李健 - 梦一场', 'url': "../server/media/李健 - 梦一场.mp3", 'img_url': '../common/img/4.jpg' },
+        { 'name': '黄小琥 - 没那么简单', 'url': "../server/media/黄小琥 - 没那么简单.mp3", 'img_url': '../common/img/6.jpg' }
+    ]
+}
