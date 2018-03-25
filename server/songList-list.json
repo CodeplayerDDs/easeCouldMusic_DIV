@@ -1,13 +1,69 @@
 {
-    "songList-list": {
-        "img": "../common/img/1.jpg",
-        "playCount": "211万",
-        "intro": "我爱你，第一句话是假的，第二句话也是假的",
-        "songList": [
-            "../server/media/李健 - 梦一场.mp3",
-            "../server/media/李健 - 梦一场.mp3",
-            "../server/media/李健 - 梦一场.mp3",
-
-        ]
-    }
+    "songList-list": [{
+            "img": "../common/img/1.jpg",
+            "playCount": 21111111,
+            "intro": "我爱你，第一句话是假的，第二句话也是假的",
+            "songList": [
+                "../server/media/李健 - 梦一场.mp3",
+                "../server/media/文武贝 - 星空.mp3",
+                "../server/media/李健 - 异乡人.mp3",
+                "../server/media/李健 - 风吹麦浪.mp3"
+            ]
+        },
+        {
+            "img": "../common/img/2.jpg",
+            "playCount": 3456123,
+            "intro": "我爱你，第一句话是假的，第二句话也是假的",
+            "songList": [
+                "../server/media/黄小琥 - 没那么简单.mp3",
+                "../server/media/文武贝 - 星空.mp3",
+                "../server/media/李健 - 异乡人.mp3",
+                "../server/media/李健 - 风吹麦浪.mp3"
+            ]
+        },
+        {
+            "img": "../common/img/3.jpg",
+            "playCount": 45612354,
+            "intro": "我爱你，第一句话是假的，第二句话也是假的",
+            "songList": [
+                "../server/media/文武贝 - 星空.mp3",
+                "../server/media/李健 - 梦一场.mp3",
+                "../server/media/李健 - 风吹麦浪.mp3",
+                "../server/media/李健 - 异乡人.mp3"
+            ]
+        },
+        {
+            "img": "../common/img/4.jpg",
+            "playCount": 1254623,
+            "intro": "我爱你，第一句话是假的，第二句话也是假的",
+            "songList": [
+                "../server/media/李健 - 风吹麦浪.mp3",
+                "../server/media/李健 - 梦一场.mp3",
+                "../server/media/文武贝 - 星空.mp3",
+                "../server/media/李健 - 异乡人.mp3"
+            ]
+        },
+        {
+            "img": "../common/img/5.jpg",
+            "playCount": 5246,
+            "intro": "我爱你，第一句话是假的，第二句话也是假的",
+            "songList": [
+                "../server/media/黄小琥 - 没那么简单.mp3",
+                "../server/media/李健 - 异乡人.mp3",
+                "../server/media/文武贝 - 星空.mp3",
+                "../server/media/李健 - 风吹麦浪.mp3"
+            ]
+        },
+        {
+            "img": "../common/img/6.jpg",
+            "playCount": 8854561,
+            "intro": "我爱你，第一句话是假的，第二句话也是假的",
+            "songList": [
+                "../server/media/李健 - 异乡人.mp3",
+                "../server/media/黄小琥 - 没那么简单.mp3",
+                "../server/media/文武贝 - 星空.mp3",
+                "../server/media/李健 - 风吹麦浪.mp3"
+            ]
+        }
+    ]
 }
