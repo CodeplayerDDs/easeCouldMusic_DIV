@@ -6,5 +6,6 @@
         { "name": "李健 - 异乡人", "url": "../server/media/李健 - 异乡人.mp3", "img_url": "../common/img/3.jpg" },
         { "name": "李健 - 梦一场", "url": "../server/media/李健 - 梦一场.mp3", "img_url": "../common/img/4.jpg" },
         { "name": "李健 - 风吹麦浪", "url": "../server/media/李健 - 风吹麦浪.mp3", "img_url": "../common/img/5.jpg" }
-    ]
+    ],
+    "title_img": "../common/img/2.jpg"
 }

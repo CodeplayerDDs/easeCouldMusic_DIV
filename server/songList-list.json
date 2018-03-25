@@ -1,0 +1,13 @@
+{
+    "songList-list": {
+        "img": "../common/img/1.jpg",
+        "playCount": "211万",
+        "intro": "我爱你，第一句话是假的，第二句话也是假的",
+        "songList": [
+            "../server/media/李健 - 梦一场.mp3",
+            "../server/media/李健 - 梦一场.mp3",
+            "../server/media/李健 - 梦一场.mp3",
+
+        ]
+    }
+}

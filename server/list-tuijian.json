@@ -2,5 +2,6 @@
     "index": "list-hanguo",
     "info": [
         { "name": "文武贝 - 星空", "url": "../server/media/文武贝 - 星空.mp3", "img_url": "../common/img/1.jpg" }
-    ]
+    ],
+    "title_img": "../common/img/3.jpg"
 }

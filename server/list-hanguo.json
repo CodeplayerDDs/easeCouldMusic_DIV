@@ -4,5 +4,6 @@
         { "name": "文武贝 - 星空", "url": "../server/media/文武贝 - 星空.mp3", "img_url": "../common/img/1.jpg" },
         { "name": "李健 - 异乡人", "url": "../server/media/李健 - 异乡人.mp3", "img_url": "../common/img/3.jpg" },
         { "name": "李健 - 风吹麦浪", "url": "../server/media/李健 - 风吹麦浪.mp3", "img_url": "../common/img/5.jpg" }
-    ]
+    ],
+    "title_img": "../common/img/1.jpg"
 }
