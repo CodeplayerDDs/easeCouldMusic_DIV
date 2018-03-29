@@ -1,0 +1,143 @@
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    height: 100%;
+}
+
+html * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    height: 1.15rem;
+    width: 100%;
+    background: #d53c34;
+    padding-left: 0.5rem;
+}
+
+.top .back {
+    display: inline-block;
+}
+
+.top .back a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: .8rem;
+    font-family: "宋体";
+}
+
+.stitle {
+    width: .8rem;
+    height: .6rem;
+    display: inline-block;
+}
+
+.stitle img {
+    width: 100%;
+    height: 100%;
+    margin-left: 5rem;
+}
+
+header {
+    height: .7rem;
+    width: 100%;
+}
+
+header ul {
+    font-family: "微软雅黑";
+    font-size: .22rem;
+    display: flex;
+    line-height: .7rem;
+    text-align: center;
+}
+
+header ul li {
+    flex: 1;
+    margin-left: .35rem;
+    margin-right: .35rem;
+    display: inline-block;
+}
+
+.selected {
+    border-bottom: 3px solid #ce3724;
+}
+
+.pictureimg {
+    width: 100%;
+    height: 3rem;
+    margin-top: .05rem;
+}
+
+.pictureimg img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+list ul {
+    padding: .1rem;
+}
+
+list ul li {
+    width: 100%;
+    height: 1rem;
+    border-top: 1px solid #ecedef;
+    display: flex;
+    padding-top: .15rem;
+    padding-bottom: .1rem;
+}
+
+list ul li .title {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: .7rem;
+}
+
+list ul li .title .name {
+    flex: 1;
+    font-size: .35rem;
+    line-height: 100%;
+}
+
+list ul li .title .singer {
+    flex: 1;
+    font-size: .15rem;
+    color: #909092;
+    line-height: 150%;
+}
+
+.cover {
+    width: .75rem;
+    height: .7rem;
+    background-size: cover;
+    margin-right: .08rem;
+}
+
+.cover img {
+    width: .75rem;
+    height: .7rem;
+    display: block;
+}
+
+list ul a {
+    text-decoration: none;
+    color: #333;
+}
+
+list ul li .logo {
+    width: 1.4rem;
+    height: .7rem;
+    position: relative;
+    padding: .2rem;
+}
+
+list ul li .logo i {
+    position: absolute;
+    left: 50%;
+}
