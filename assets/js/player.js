@@ -1,6 +1,7 @@
 // tool function
 //把单位为秒的时间规则化
 function regularTime(s) {
+    s = parseInt(s);
     var min = parseInt(s / 60);
     var sec = s - min * 60;
     str = '';
@@ -27,6 +28,7 @@ var play = (function(data) {
     var myInterval;
     // ontouchmove
     function dragFn() {
+
         var scroll = document.getElementById('scroll');
         var bar = document.getElementById('bar');
         var mask = document.getElementById('mask');
@@ -41,6 +43,11 @@ var play = (function(data) {
             mask.style.width = barleft + 'px';
             bar.style.left = barleft - bar.offsetWidth / 2 + "px";
             // 拖动一定写到 down 里面才可以
+
+
+        }
+        scroll.ontouchmove = function() {
+            var leftVal = scroll.offsetLeft;
             document.ontouchmove = function(event) {
                 // var event = event || window.event;
                 // console.log(event.touches[0].pageX)
@@ -57,27 +64,49 @@ var play = (function(data) {
                 //防止选择内容--当拖动鼠标过快时候，弹起鼠标，bar也会移动，修复bug
                 window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
             }
-
         }
-        document.onmouseup = function() {
-            document.onmousemove = null; //弹起鼠标不做任何操作
+        document.ontouchend = function() {
+            //播放总时间
+            var dura = audio.duration;
+            var bar = document.getElementById('bar');
+            var scroll = document.getElementById('scroll');
+            var barRelativePosi = bar.offsetLeft + bar.offsetWidth / 2;
+
+            console.log('bar.offsetLeft  ' + bar.offsetLeft);
+            console.log('scroll.offsetLeft  ' + scroll.offsetLeft);
+            console.log('barRelativePosi  ' + barRelativePosi);
+            var barPercent = barRelativePosi / scroll.offsetWidth;
+            var toTime = barPercent * dura;
+            console.log(toTime);
+            audio.currentTime = toTime;
+            changeTimeCur();
+            // document.ontouchmove = null; //弹起鼠标不做任何操作
         }
     }
 
     function createAndPlay() {
         audio = new Audio("../server/media/文武贝 - 星空.mp3");
         audio.play();
-        console.log([audio])
-        var timeAll = document.getElementsByClassName('time-all')[0];
-        timeAll.innerHTML = parseInt([audio][0].duration);
-        console.log([audio][0].duration);
+        console.log([audio]);
+        audio.onloadedmetadata = function() {
+            var timeAll = document.getElementsByClassName('time-all')[0];
+            console.log(timeAll);
+            timeAll.innerHTML = regularTime(audio.duration);
+            console.log(audio.duration);
+        }
+
+    }
+
+    // add curtime in html time-cur
+    function changeTimeCur() {
+        var curTime = document.getElementsByClassName('time-cur')[0];
+        curTime.innerHTML = regularTime(parseInt(audio.currentTime));
     }
 
     function settingInterval() {
         myInterval = setInterval(function() {
-            var curTime = document.getElementsByClassName('time-cur')[0];
-            curTime.innerHTML = regularTime(parseInt(audio.currentTime));
-        }, 1000);
+            changeTimeCur();
+        }, 100);
     }
 
     function bindEvent() {
@@ -101,6 +130,7 @@ var play = (function(data) {
                         audio.play();
                     };
                     break;
+                case "next":
             }
         }
     }
