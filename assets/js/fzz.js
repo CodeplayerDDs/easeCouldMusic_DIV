@@ -1,6 +1,7 @@
 var curIndex = 0;
 var aLiList = document.querySelectorAll('#select_list li');
 var magor = document.getElementsByClassName("magor")[0];
+var leave = document.getElementsByClassName("leave")[0];
 document.getElementById('select_list').onclick = function(ev) {
     // 获取事件源对象
     var oTarget = ev.target;
@@ -9,18 +10,12 @@ document.getElementById('select_list').onclick = function(ev) {
         if (v == curIndex) {
             return;
         }
+        run(v, curIndex);
         curIndex = v;
-        cutStyle();
         var name = oTarget.getAttribute("id");
         begin(name);
     }
 };
-
-function cutStyle() {
-    $(aLiList[curIndex]).addClass('selected').siblings().removeClass('selected');
-};
-cutStyle();
-
 //服务器请求
 function begin(indexname) {
     $.ajax({
@@ -56,6 +51,13 @@ function insertDom(arr) {
         str += tmpArr.join('');
     }
     $(magor).html(str);
+};
+
+function run(v, curindex) {
+    if (v > curindex)
+        leave.style.left = leave.offsetLeft + (v - curindex) * 83 + "px";
+    if (v < curindex)
+        leave.style.left = leave.offsetLeft - (curindex - v) * 83 + "px";
 };
 
 function picture_img(arr) {
