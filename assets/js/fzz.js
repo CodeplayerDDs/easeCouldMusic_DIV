@@ -54,10 +54,11 @@ function insertDom(arr) {
 };
 
 function run(v, curindex) {
+    if (deviceWidth > 750) deviceWidth = 750;
     if (v > curindex)
-        leave.style.left = leave.offsetLeft + (v - curindex) * 83 + "px";
+        leave.style.left = leave.offsetLeft + (v - curindex) * deviceWidth / 5 + "px";
     if (v < curindex)
-        leave.style.left = leave.offsetLeft - (curindex - v) * 83 + "px";
+        leave.style.left = leave.offsetLeft - (curindex - v) * deviceWidth / 5 + "px";
 };
 
 function picture_img(arr) {
