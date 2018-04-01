@@ -1,0 +1,42 @@
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    height: 100%;
+}
+html * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    color: rgb(39, 38, 54);
+    min-height: 100%;
+}
+img {
+    display: block;
+    border: none;
+}
+a {
+    color: rgb(39, 38, 54);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(254, 109, 106);
+    text-decoration: none;
+}
+ul, li {
+    list-style: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: 
+}
+.clearFix::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}

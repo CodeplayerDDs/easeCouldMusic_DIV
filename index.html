@@ -5,11 +5,386 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/iconfont.css">
+    <link rel="stylesheet" href="./assets/css/indexstyle.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <title>App</title>
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = 750 / 7.5 + 'px';
+    </script>
 </head>
 
 <body>
+    <header class="header">
+        <div class="logo"></div>
+        <div class="whiteHeader"></div>
+    </header>
+
+    <section class="main">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./common/img/1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./common/img/2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./common/img/3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./common/img/4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./common/img/5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./common/img/3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./common/img/2.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-bullets"></div>
+        </div>
+        <div class="chioces">
+            <ul>
+                <li>
+                    <div class="chiocesLogo">
+                        <div class="imgWrapper">
+                            <img src="./assets/images/收音机.png" alt="">
+                        </div>
+                    </div>
+                    <p>私人FM</p>
+                </li>
+                <li>
+                    <div class="chiocesLogo">
+                        <div class="imgWrapper">
+                            <img src="./assets/images/_日历.png" alt="">
+                        </div>
+                    </div>
+                    <p>每日推荐</p>
+                </li>
+                <li>
+                    <div class="chiocesLogo">
+                        <div class="imgWrapper">
+                            <img src="./assets/images/推荐歌单.png" alt="">
+                        </div>
+                    </div>
+                    <p>歌单</p>
+                </li>
+                <li>
+                    <div class="chiocesLogo">
+                        <div class="imgWrapper">
+                            <img src="./assets/images/排行榜.png" alt="">
+                        </div>
+                    </div>
+                    <p>排行榜</p>
+                </li>
+            </ul>
+        </div>
+        <div class="remmendSongs sectionBody">
+            <div class="sectionTop">
+                <h5>推荐歌单 ></h5>
+            </div>
+            <div class="sectionContent">
+                <ul>
+                    <li>
+                        <a href="./pages/player.html">
+                            <div class="coverPic">
+                                <div class="listenedNumbers">113万</div>
+                                <img src="" alt="">
+                            </div>
+                            <p>我爱你，第一句是假的，第二句也是假的</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/player.html">
+                            <div class="coverPic">
+                                <div class="listenedNumbers">113万</div>
+                                <img src="" alt="">
+                            </div>
+                            <p>我爱你，第一句是假的，第二句也是假的</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="noMargin" href="./pages/player.html">
+                            <div class="coverPic">
+                                <div class="listenedNumbers">113万</div>
+                                <img src="" alt="">
+                            </div>
+                            <p>我爱你，第一句是假的，第二句也是假的</p>
+                        </a>
+                    </li>
+
+                </ul>
+                <ul>
+                    <li>
+                        <a href="./pages/player.html">
+                            <div class="coverPic">
+                                <div class="listenedNumbers">113万</div>
+                                <img src="" alt="">
+                            </div>
+                            <p>我爱你，第一句是假的，第二句也是假的</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/player.html">
+                            <div class="coverPic">
+                                <div class="listenedNumbers">113万</div>
+                                <img src="" alt="">
+                            </div>
+                            <p>我爱你，第一句是假的，第二句也是假的</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="noMargin" href="./pages/player.html">
+                            <div class="coverPic">
+                                <div class="listenedNumbers">113万</div>
+                                <img src="" alt="">
+                            </div>
+                            <p>我爱你，第一句是假的，第二句也是假的</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="newestSongs sectionBody">
+            <div class="sectionTop">
+                <h5>最新音乐 ></h5>
+            </div>
+            <div class="sectionContent">
+                <ul>
+                    <li>
+                        <a href="./pages/player.html">
+                            <div class="coverPic">
+
+                            </div>
+                            <h5>新歌推荐</h5>
+                            <p>符合口味的新歌</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/player.html">
+                            <div class="coverPic">
+
+                            </div>
+                            <h5>新歌推荐</h5>
+                            <p>符合口味的新歌</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="noMargin" href="./pages/player.html">
+                            <div class="coverPic">
+
+                            </div>
+                            <h5>新歌推荐</h5>
+                            <p>符合口味的新歌</p>
+                        </a>
+                    </li>
+
+                </ul>
+                <ul>
+                    <li>
+                        <a href="./pages/player.html">
+                            <div class="coverPic">
+
+                            </div>
+                            <h5>新歌推荐</h5>
+                            <p>符合口味的新歌</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/player.html">
+                            <div class="coverPic">
+
+                            </div>
+                            <h5>新歌推荐</h5>
+                            <p>符合口味的新歌</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="noMargin" href="./pages/player.html">
+                            <div class="coverPic">
+
+                            </div>
+                            <h5>新歌推荐</h5>
+                            <p>符合口味的新歌</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="anchorRadio sectionBody">
+            <div class="sectionTop">
+                <h5>主播电台 ></h5>
+            </div>
+            <div class="sectionContent">
+                <ul>
+                    <li>
+                        <a href="./pages/player.html">
+                            <div class="coverPic">
+                                <img src="" alt="">
+                                <div class="payedSongs">付费精品</div>
+                                <div class="radioDescription">王东电台</div>
+                            </div>
+                            <p>我爱你，第一句是假的，第二句也是假的</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/player.html">
+                            <div class="coverPic">
+                                <img src="" alt="">
+                                <div class="payedSongs">付费精品</div>
+                                <div class="radioDescription">王东电台</div>
+                            </div>
+                            <p>我爱你，第一句是假的，第二句也是假的</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="noMargin" href="./pages/player.html">
+                            <div class="coverPic">
+                                <img src="" alt="">
+                                <div class="payedSongs">付费精品</div>
+                                <div class="radioDescription">王东电台</div>
+                            </div>
+                            <p>我爱你，第一句是假的，第二句也是假的</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="./pages/player.html">
+                            <div class="coverPic">
+                                <img src="" alt="">
+                                <div class="payedSongs">付费精品</div>
+                                <div class="radioDescription">王东电台</div>
+                            </div>
+                            <p>我爱你，第一句是假的，第二句也是假的</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/player.html">
+                            <div class="coverPic">
+                                <img src="" alt="">
+                                <div class="payedSongs">付费精品</div>
+                                <div class="radioDescription">王东电台</div>
+                            </div>
+                            <p>我爱你，第一句是假的，第二句也是假的</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="noMargin" href="./pages/player.html">
+                            <div class="coverPic">
+                                <img src="" alt="">
+                                <div class="payedSongs">付费精品</div>
+                                <div class="radioDescription">王东电台</div>
+                            </div>
+                            <p>我爱你，第一句是假的，第二句也是假的</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="selectedColumn sectionBody">
+            <div class="sectionTop">
+                <h5>精选专栏 ></h5>
+            </div>
+            <ul class="ulColumn">
+                <li>
+                    <a href="./pages/player.html">
+                        <h5>
+                            <span class="column">专栏</span> 王啸坤：那些你们喜欢的不喜欢的我都喜欢的
+                            <p>阅读 7618</p>
+                        </h5>
+                        <div class="columnPic">
+                            <img src="" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/player.html">
+                        <h5>
+                            <span class="column">专栏</span> 王啸坤：那些你们喜欢的不喜欢的我都喜欢的
+                            <p>阅读 7618</p>
+                        </h5>
+                        <div class="columnPic">
+                            <img src="" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="lastColumn" href="./pages/player.html">
+                        <h5>
+                            <span class="column">专栏</span> 王啸坤：那些你们喜欢的不喜欢的我都喜欢的
+                            <p>阅读 7618</p>
+                        </h5>
+                        <div class="columnPic">
+                            <img src="" alt="">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="adjustLines">
+            <a href="adjustLine.html">调整栏目顺序</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footerBox">
+            <a href="">
+                <div class="coverPic">
+                    <img src="" alt="">
+                </div>
+                <div class="songInfo">
+                    <h5>追梦赤子心</h5>
+                    <p>GALA</p>
+                </div>
+            </a>
+            <div class="icons">
+                <i id="playIcon" class="iconfont icon-bofang"></i>
+                <i class="iconfont icon-liebiao2"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./common/js/jquery-1.11.3.min.js"></script>
+    <script src="./assets/js/indexInit.js"></script>
+    <script>
+        var oPlay = document.getElementById('playIcon');
+        console.log(oPlay);
+
+        switchPlay = function() {
+            oPlay.onmousedown = function() {
+                if (oPlay.className == "iconfont icon-bofang") {
+                    oPlay.className = "iconfont icon-zanting"
+                } else {
+                    oPlay.className = "iconfont icon-bofang"
+                }
+            }
+        }
+
+        switchPlay();
+
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+            }
+
+        })
+    </script>
 
 </body>
 

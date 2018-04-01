@@ -1,0 +1,308 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: none;
+}
+
+.header {
+    width: 100%;
+    height: 0.8rem;
+    background-color: #d43b33;
+}
+
+.header .logo {
+    width: 0.35rem;
+    height: 0.26rem;
+    background: url('../images/logo_03.jpg') no-repeat;
+    background-size: cover;
+    float: right;
+    margin-top: 0.12rem;
+    margin-right: 0.1rem;
+}
+
+.header .whiteHeader {
+    width: 100%;
+    height: 0.3rem;
+    margin-top: 0.5rem;
+    background: white;
+}
+
+.listenedNumbers {
+    float: right;
+    font-size: 4px;
+    color: white;
+    padding-top: 0.03rem;
+    padding-right: 0.05rem;
+}
+
+.payedSongs {
+    background: red;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: .04rem;
+    border-bottom-right-radius: 6px;
+    font-size: 4px;
+    color: white;
+}
+
+.radioDescription {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: .02rem;
+    font-size: 5px;
+    color: white;
+}
+
+.main {
+    flex: 1;
+    height: 0;
+    overflow-y: scroll;
+}
+
+.main .swiper-container {
+    width: 100%;
+    height: 1.46rem;
+}
+
+.main .swiper-container .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .swiper-container .swiper-pagination-bullet-active {
+    background: #d43b33;
+}
+
+.main .chioces {
+    width: 100%;
+    height: 0.98rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.main .chioces ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.main .chioces ul li {
+    flex: 0.25;
+}
+
+.main .chioces ul li .chiocesLogo {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 0.15rem auto 0.1rem;
+    border-radius: 50%;
+    border: 1px solid #d43b33;
+}
+
+.main .chioces ul li .chiocesLogo .imgWrapper {
+    width: 60%;
+    height: 60%;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+.main .chioces ul li .chiocesLogo .imgWrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .chioces ul li p {
+    font-size: 13px;
+    text-align: center;
+}
+
+.main .sectionBody {
+    width: 100%;
+    height: 4rem;
+}
+
+.main .sectionBody .sectionTop {
+    height: 0.36rem;
+    width: 100%;
+}
+
+.main .sectionBody .sectionTop h5 {
+    padding-left: .1rem;
+    /* 这里的处理有点问题，但不想用更多代码来改变 */
+    font-size: 18px;
+    border-left: solid 2px #db6259;
+    margin-top: 0.1rem;
+}
+
+.main .sectionBody .sectionContent {
+    width: 100%;
+    height: 3.52rem;
+}
+
+.main .sectionBody .sectionContent ul {
+    display: flex;
+}
+
+.main .sectionBody .sectionContent ul li {
+    flex: .3333333333;
+}
+
+.main .sectionBody .sectionContent ul li a {
+    display: block;
+    /* 能用flex实现换行吗 */
+    height: 1.76rem;
+    margin-right: 1px;
+}
+
+.main .sectionBody .sectionContent ul li a.noMargin {
+    margin: 0;
+}
+
+.main .sectionBody .sectionContent ul li a .coverPic {
+    width: 100%;
+    height: 1.25rem;
+    background: orange;
+    position: relative;
+}
+
+.main .sectionBody .sectionContent ul li a p {
+    width: 100%;
+    height: 0.51rem;
+    padding: 0.05rem;
+    line-height: 0.15rem;
+    font-size: 10px;
+}
+
+.main .newestSongs .sectionContent ul li a h5 {
+    font-size: 14px;
+    padding: 0.05rem;
+    padding-bottom: 0;
+    font-weight: bold;
+}
+
+.main .selectedColumn {
+    height: 3.2rem;
+}
+
+.main .selectedColumn .ulColumn li a {
+    display: block;
+    height: .85rem;
+    border: 1px solid #f3f4f6;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+}
+
+.main .selectedColumn .ulColumn li a h5 {
+    flex: 0.6;
+    padding: 0.15rem 0.08rem 0.43rem 0.08rem;
+}
+
+.main .selectedColumn .ulColumn li a.lastColumn {
+    height: 1.07rem;
+}
+
+.main .selectedColumn .ulColumn li a.lastColumn .columnPic {
+    height: .83rem;
+}
+
+.main .selectedColumn .ulColumn li a p {
+    font-size: 2px;
+    font-weight: 100;
+    color: #afafaf;
+    padding-top: 0.15rem;
+}
+
+.main .selectedColumn .ulColumn li a .columnPic {
+    flex: 0.4;
+}
+
+.main .selectedColumn .ulColumn li a .columnPic img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .adjustLines {
+    width: 100%;
+    height: .5rem;
+}
+
+.main .adjustLines a {
+    display: block;
+    width: 1.2rem;
+    color: #d43b33;
+    border: 1px solid #d43b33;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: .2rem auto;
+}
+
+.column {
+    font-size: 2px;
+    color: #d43b33;
+    border: #d43b33 1px solid;
+}
+
+.footer {
+    height: .5rem;
+    padding: .04rem;
+    background: rgba(255, 255, 255, .5);
+}
+
+.footer .footerBox {
+    display: flex;
+}
+
+.footer a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.footer a .coverPic {
+    width: .42rem;
+    height: .42rem;
+    background: #d43b33;
+}
+
+.footer a .coverPic img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer a .songInfo {
+    flex: 1;
+    line-height: .21rem;
+    padding-left: .1rem;
+}
+
+.footer a .songInfo h5 {
+    font-size: 15px;
+    color: black;
+}
+
+.footer a .songInfo p {
+    font-size: 10px;
+    color: #afafaf;
+}
+
+.footer .footerBox .icons {
+    width: .84rem;
+    height: .42rem;
+    display: flex;
+    flex-direction: initial;
+    align-content: space-between;
+}
+
+.footer .icons i {
+    width: .42rem;
+    height: .42rem;
+    font-size: 31px;
+    color: #d43b33;
+    line-height: .42rem;
+    text-align: left;
+}
