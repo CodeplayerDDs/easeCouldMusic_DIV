@@ -1,0 +1,228 @@
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    height: 100%;
+}
+
+
+/* my reset */
+
+html * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: url(../images/播放背景.jpg) no-repeat;
+    background-size: cover;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+/* my style */
+
+.top {
+    width: 100%;
+    height: .8rem;
+    text-align: center;
+    border-bottom: 1px solid rgb(118, 121, 150);
+    vertical-align: top;
+}
+
+.back {
+    display: inline-block;
+    margin: .2rem .2rem;
+    width: .4rem;
+    height: .4rem;
+    float: left;
+    background: url(../images/返回.png) no-repeat;
+    background-size: cover;
+}
+
+.fanhui {
+    width: .4rem;
+    height: .4rem;
+}
+
+.data {
+    display: inline-block;
+    margin: 0 auto;
+    width: 2rem;
+    height: .8rem;
+    color: white;
+    vertical-align: top;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    width: 2rem;
+    height: .4rem;
+    font-size: .3rem;
+    padding-top: .1rem;
+}
+
+.singer {
+    display: flex;
+    flex-direction: column;
+    width: 2rem;
+    height: .4rem;
+    font-size: .2rem;
+    padding-top: .1rem;
+}
+
+.share {
+    display: flex;
+    float: right;
+    margin-right: .2rem;
+    margin-top: .2rem;
+    width: .4rem;
+    height: .4rem;
+    background: url(../images/分享.png) no-repeat;
+    background-size: cover;
+}
+
+.fenxiang {
+    width: .4rem;
+    height: .4rem;
+}
+
+
+/* middle */
+
+.mid {
+    width: 100%;
+    height: 10rem;
+    padding-top: 1.65rem;
+    padding-left: .89rem;
+}
+
+.lunpan {
+    padding-top: .7rem;
+    width: 5.8rem;
+    height: 5.8rem;
+    border-radius: 50%;
+    background: url(../images/轮盘.png) no-repeat;
+    background-size: contain;
+}
+
+.neiquan {
+    margin: auto;
+    border-radius: 50%;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url(../images/张杰.jpg) no-repeat;
+    background-size: cover;
+}
+
+.huadong {
+    width: 100%;
+    height: .7rem;
+    padding-left: .28rem;
+    padding-right: .23rem;
+}
+
+.time-cur {
+    display: inline-block;
+    float: left;
+    width: .7rem;
+    height: .7rem;
+    font-size: .2rem;
+    color: white;
+}
+
+.time-all {
+    display: inline-block;
+    float: right;
+    width: .7rem;
+    height: .7rem;
+    font-size: .2rem;
+    color: white;
+}
+
+.bot {
+    width: 100%;
+    height: .9rem;
+    padding-left: 2rem;
+}
+
+.switch {
+    width: 3.6rem;
+    height: .9rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.last {
+    display: inline-block;
+    width: .9rem;
+    height: .9rem;
+    margin-right: .45rem;
+    background: url(../images/后退.png) no-repeat;
+    background-size: contain;
+    float: left;
+}
+
+.pause {
+    display: inline-block;
+    width: .9rem;
+    height: .9rem;
+    margin-right: .45rem;
+    background: url(../images/暂停.png) no-repeat;
+    background-size: contain;
+}
+
+.play {
+    display: inline-block;
+    width: .9rem;
+    height: .9rem;
+    color: white;
+    margin-right: .45rem;
+    background: url(../images/播放.png) no-repeat;
+    background-size: contain;
+}
+
+.next {
+    display: inline-block;
+    width: .9rem;
+    height: .9rem;
+    background: url(../images/前进.png) no-repeat;
+    background-size: contain;
+    float: right;
+}
+
+.scroll {
+    margin-left: 1rem;
+    width: 5rem;
+    height: 5px;
+    background: #ccc;
+    position: relative;
+}
+
+.bar {
+    width: .4rem;
+    height: .4rem;
+    background: red;
+    position: absolute;
+    top: -.15rem;
+    left: -.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: red;
+    width: 0;
+    height: 5px;
+}
+
+#audioWrapper {
+    display: none;
+}
