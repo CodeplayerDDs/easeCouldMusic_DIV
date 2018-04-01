@@ -105,14 +105,14 @@ li {
     padding-top: .7rem;
     width: 5.8rem;
     height: 5.8rem;
-    border-radius: 50%;
+    border-radius: 100%;
     background: url(../images/轮盘.png) no-repeat;
     background-size: contain;
 }
 
 .neiquan {
     margin: auto;
-    border-radius: 50%;
+    border-radius: 100%;
     width: 4.2rem;
     height: 4.2rem;
     background: url(../images/张杰.jpg) no-repeat;

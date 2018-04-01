@@ -2,6 +2,8 @@ var curIndex = 0;
 var aLiList = document.querySelectorAll('#select_list li');
 var magor = document.getElementsByClassName("magor")[0];
 var leave = document.getElementsByClassName("leave")[0];
+
+
 document.getElementById('select_list').onclick = function(ev) {
     // 获取事件源对象
     var oTarget = ev.target;
@@ -20,7 +22,7 @@ document.getElementById('select_list').onclick = function(ev) {
 function begin(indexname) {
     $.ajax({
         type: "GET",
-        url: "http://127.0.0.1/newwyy/easeCouldMusic_DIV/server/" + indexname + ".json",
+        url: "../server/" + indexname + ".json",
         dataType: "json"
     }).done(function(data) {
         insertDom(data.info);
@@ -32,7 +34,7 @@ function insertDom(arr) {
     var str = "";
     for (var i = 0; i < arr.length; i++) {
         var tmpArr = [
-            '<a href="' + arr[i].url + '">',
+            '<a href="' + '#' + '">',
             '<li>',
             /* '<div class="cover" style="background:url(' + arr[i].img_url + ')")>',*/
             '<div class="cover">',
