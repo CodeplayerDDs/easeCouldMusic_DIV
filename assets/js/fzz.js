@@ -25,18 +25,19 @@ function begin(indexname) {
         url: "../server/" + indexname + ".json",
         dataType: "json"
     }).done(function(data) {
-        insertDom(data.info);
+        insertDom(data.index, data.info);
         picture_img(data.title_img);
     });
 }
 //动态打入歌曲列表
-function insertDom(arr) {
+function insertDom(data, arr) {
     var str = "";
     for (var i = 0; i < arr.length; i++) {
-        var tmpArr = [
-            '<a href="' + '#' + '">',
-            '<li>',
-            /* '<div class="cover" style="background:url(' + arr[i].img_url + ')")>',*/
+        var tmpArr = [ <<
+            << << < HEAD '<a href="' + '#' + '">', ===
+            === =
+            '<a href="http://127.0.0.1/easeCouldMusic_DIY/pages/player.html?' + data + '&' + i + '">', >>>
+            >>> > 33 bb069cc85fe40f484bf799922947f7499b0e16 '<li>',
             '<div class="cover">',
             '<img src=" ' + arr[i].img_url + '">',
             '</div>',
@@ -56,10 +57,11 @@ function insertDom(arr) {
 };
 
 function run(v, curindex) {
+    if (deviceWidth > 750) deviceWidth = 750;
     if (v > curindex)
-        leave.style.left = leave.offsetLeft + (v - curindex) * 83 + "px";
+        leave.style.left = leave.offsetLeft + (v - curindex) * deviceWidth / 5 + "px";
     if (v < curindex)
-        leave.style.left = leave.offsetLeft - (curindex - v) * 83 + "px";
+        leave.style.left = leave.offsetLeft - (curindex - v) * deviceWidth / 5 + "px";
 };
 
 function picture_img(arr) {
